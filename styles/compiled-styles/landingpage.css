@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.landingpage-pagewrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+
+.hook-section {
+  height: 100%;
+  background-color: #1B4332;
+}
+.hook-section h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.action-section {
+  height: 100%;
+  background-color: #D8F3DC;
+}/*# sourceMappingURL=landingpage.css.map */
