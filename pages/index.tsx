@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Head from "next/head";
-
+import Phone from "../media/phone.png";
 const Home: NextPage = () => {
   return (
     <div>
@@ -15,9 +16,21 @@ const Home: NextPage = () => {
 
       <div className="landingpage-pagewrapper">
         <section className="hook-section">
-          <h1>Gig Budgeter</h1>
+          <div className="hook-content-wrapper">
+            <h1>Gig Budgeter</h1>
+            <h2>Let us do the math</h2>
+            <div className="phone-img">
+              <Image src={Phone} alt="phone graphic" width="400" height="470" />
+            </div>
+          </div>
         </section>
-        <section className="action-section"></section>
+        <section className="action-section">
+          <div className="action-content-wrapper">
+            <h3>A finance tracker for freelancers and contract workers. </h3>
+            <button className="login-btns">Sign Up</button>
+            <button className="login-btns">Login</button>
+          </div>
+        </section>
       </div>
     </div>
   );

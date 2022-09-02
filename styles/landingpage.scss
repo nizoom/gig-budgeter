@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 $light-background: #D8F3DC;
 $dark-background: #1B4332;
+$darkest: #081C15;
 $font-weights: (
     "light" : 100,
     "regular": 400,
@@ -11,8 +12,9 @@ $font-weights: (
 );
 
 $font-sizes: (
-    "largest": 40px,
-    // ""
+    "largest": 41.89px,
+    "medium" : 25.89px,
+    "small" : 16px
 );
 
 .landingpage-pagewrapper{
@@ -26,13 +28,67 @@ $font-sizes: (
     background-color: $dark-background;
 
     h1{
-        color: white;
-        font-size: 40px;
+        color: $light-background;
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: map-get($font-sizes, largest);
+    }
+
+    h2{
+        color: $light-background;
+        font-weight: map-get($font-weights, regular);
+        font-size: map-get($font-sizes, largest);
+        margin-top: 50px;
+        letter-spacing: 1px;
     }
 }
 
 .action-section{
     height: 100%;
     background-color: $light-background;
+   
 }
 
+
+.hook-content-wrapper{
+    margin-left: 92px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.phone-img{
+   margin-top: 50px;
+   margin-bottom: -1px;
+}
+
+.action-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 220px;
+    margin: auto;
+    gap: 50px;
+    
+
+    h3{
+        color: $darkest;
+        margin: 0 auto;
+        font-size: map-get($font-sizes, medium );
+        font-weight: map-get($font-weights, regular);
+
+    }
+}
+
+.login-btns{
+    height: 55px;
+    width: 200px;
+    background-color: $darkest;
+    color: $light-background;
+    border: none;
+    cursor: pointer;
+    font-weight: map-get($font-weights, semi-bold);
+    font-size: map-get($font-sizes, small );
+}
