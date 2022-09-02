@@ -17,10 +17,13 @@ const Home: NextPage = () => {
       <div className="landingpage-pagewrapper">
         <section className="hook-section">
           <div className="hook-content-wrapper">
-            <h1>Gig Budgeter</h1>
-            <h2>Let us do the math</h2>
+            <div className="hook-copy">
+              <h1>Gig Budgeter</h1>
+              <h2>Let us do the math</h2>
+            </div>
+
             <div className="phone-img">
-              <Image src={Phone} alt="phone graphic" width="400" height="470" />
+              <Image src={Phone} alt="phone graphic" height="500" width="420" />
             </div>
           </div>
         </section>
