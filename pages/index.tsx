@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <div className="action-content-wrapper">
             <h3>A finance tracker for freelancers and contract workers. </h3>
             <button className="login-btns">Sign Up</button>
-            <button className="login-btns">Login</button>
+            <button className="login-btns login">Login</button>
           </div>
         </section>
       </div>

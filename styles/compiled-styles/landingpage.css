@@ -66,4 +66,66 @@
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .landingpage-pagewrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone-img {
+    display: none;
+  }
+  .hook-section {
+    background-color: #D8F3DC;
+    width: 100%;
+  }
+  .hook-section h1, .hook-section h2 {
+    color: #081C15;
+  }
+  .hook-section .hook-content-wrapper {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  .hook-section h2 {
+    visibility: hidden;
+  }
+  .hook-section h2:after {
+    visibility: visible;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25.89px;
+    content: "A finance tracker for freelancers and contract workers.";
+  }
+  .action-section {
+    height: 50%;
+  }
+  .action-content-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 375px;
+    flex-direction: column-reverse;
+  }
+  .action-content-wrapper .login {
+    margin-bottom: 30px;
+  }
+  .action-content-wrapper h3 {
+    visibility: hidden;
+  }
+  .action-content-wrapper h3:after {
+    text-align: center;
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    font-size: 25.89px;
+    content: "Let us do the math.";
+  }
 }/*# sourceMappingURL=landingpage.css.map */

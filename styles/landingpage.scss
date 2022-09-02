@@ -1,7 +1,9 @@
+// @use 'functions';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 $light-background: #D8F3DC;
 $dark-background: #1B4332;
 $darkest: #081C15;
+$ReplacementCopy: 'A finance tracker for freelancers and contract workers.';
 $font-weights: (
     "light" : 100,
     "regular": 400,
@@ -104,3 +106,79 @@ $font-sizes: (
     font-weight: map-get($font-weights, semi-bold);
     font-size: map-get($font-sizes, small );
 }
+
+@media (max-width: 800px){
+ .landingpage-pagewrapper{
+    display: flex;
+    flex-direction: column;
+
+  
+ }
+ .phone-img{
+    display: none;
+    }
+  .hook-section{
+    background-color: $light-background;
+    width: 100%;
+    h1, h2{
+        color: $darkest;
+    }
+    .hook-content-wrapper{
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+     
+    }
+
+    h2{
+        visibility: hidden;
+    }
+    h2:after{
+     
+        visibility: visible;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        width: 275px;
+        margin-left: auto; 
+        margin-right: auto; 
+        font-size: map-get($font-sizes, medium );
+        content: $ReplacementCopy;
+    }
+  }
+  .action-section{
+    height: 50%;
+  }
+  .action-content-wrapper{
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 375px;
+    flex-direction: column-reverse;
+
+    .login{
+        margin-bottom: 30px;
+    }
+
+    h3{
+        visibility: hidden;
+    }
+
+    h3:after{
+        text-align: center;
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 1%;
+       
+        
+
+        font-size: map-get($font-sizes, medium );
+        content: "Let us do the math.";
+      
+        
+    }
+  }
+}
+
