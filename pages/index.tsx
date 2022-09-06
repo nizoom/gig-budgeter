@@ -20,6 +20,7 @@ const Home: NextPage = () => {
             <div className="hook-copy">
               <h1>Gig Budgeter</h1>
               <h2>Let us do the math</h2>
+              <h3 className="replacing-copy-1"></h3>
             </div>
 
             <div className="phone-img">
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <section className="action-section">
           <div className="action-content-wrapper">
             <h3>A finance tracker for freelancers and contract workers. </h3>
+            <h3 className="replacing-copy-2"></h3>
             <button className="login-btns">Sign Up</button>
             <button className="login-btns login">Login</button>
           </div>

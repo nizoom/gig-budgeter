@@ -1,16 +1,18 @@
-// @use 'functions';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "functions";
 $light-background: #D8F3DC;
 $dark-background: #1B4332;
+
+$line-one: "Let us do the math";
+$line-two: "A finance tracker for freelancers and contract workers.";
+
 $darkest: #081C15;
-$ReplacementCopy: 'A finance tracker for freelancers and contract workers.';
-$font-weights: (
+    $font-weights: (
     "light" : 100,
     "regular": 400,
     "semi-bold": 500,
     "bold" : 700,
     "heavy" : 900,
-    
 );
 
 $font-sizes: (
@@ -71,11 +73,6 @@ $font-sizes: (
 }
 
 
-.phone-img{
-   
- 
-}
-
 .action-content-wrapper{
     display: flex;
     flex-direction: column;
@@ -111,74 +108,52 @@ $font-sizes: (
  .landingpage-pagewrapper{
     display: flex;
     flex-direction: column;
-
-  
+    justify-content: center;
  }
+ .action-content-wrapper{
+    flex-direction: column-reverse;
+   }
  .phone-img{
     display: none;
-    }
+  }
   .hook-section{
     background-color: $light-background;
     width: 100%;
-    h1, h2{
-        color: $darkest;
-    }
+        h1, h2{
+            color: $darkest;
+        }
     .hook-content-wrapper{
-        justify-content: center;
+     
         margin: auto;
         text-align: center;
-     
-    }
-
-    h2{
-        visibility: hidden;
-    }
-    h2:after{
-     
-        visibility: visible;
-        position: absolute;
-        top: 200px;
-        left: 0;
-        right: 0;
-        width: 275px;
-        margin-left: auto; 
-        margin-right: auto; 
-        font-size: map-get($font-sizes, medium );
-        content: $ReplacementCopy;
-    }
-  }
-  .action-section{
-    height: 50%;
-  }
-  .action-content-wrapper{
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 375px;
-    flex-direction: column-reverse;
-
-    .login{
-        margin-bottom: 30px;
-    }
-
-    h3{
-        visibility: hidden;
-    }
-
-    h3:after{
-        text-align: center;
-        visibility: visible;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 1%;
-       
         
+      }
+  }
+    
+   .hook-copy h2 {
+        visibility: collapse;
+        display: none;
+    }
 
-        font-size: map-get($font-sizes, medium );
-        content: "Let us do the math.";
-      
+    .action-content-wrapper h3:first-child{
+        visibility: collapse;
         
     }
-  }
+
+   .replacing-copy-2::before {
+        content: str-replace($line-two, $line-two, $line-one);
+    }
+
+    .replacing-copy-1::before{
+        color: #081C15;
+        margin: 0 auto;
+        font-size: map-get($font-sizes, medium );
+        font-weight: 400;
+        content: str-replace($line-one, $line-one, $line-two);
+    }
+  
 }
+
+
+
 
