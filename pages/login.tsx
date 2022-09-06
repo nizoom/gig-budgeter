@@ -16,20 +16,16 @@ const LoginPage: NextPage = () => {
           <div className="label-input-group">
             <label htmlFor="password">Password</label>
             {/* add value attribute later */}
-            <input
-              type="password"
-              id="password-field"
-              className="login-input"
-            />
+            <input type="password" id="password" className="login-input" />
           </div>
 
           <button type="submit" className="login-btns">
             Login
           </button>
 
-          <section className="firebase-section">
+          {/* <section className="firebase-section">
             <p>Or login with:</p>
-          </section>
+          </section> */}
         </form>
       </section>
     </div>

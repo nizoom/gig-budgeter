@@ -69,6 +69,20 @@
     margin-bottom: 50px;
 }
 
+.signup-btns-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+   
+}
+.back-btn{
+   
+    position: absolute;
+    left: 5%;
+    
+}
+
 @media(max-width: 800px){
     .login-box{
         width: 300px;
@@ -97,6 +111,15 @@
         header{
             font-size: map-get(landingpage.$font-sizes, small );
         }
+    }
+    .signup-btns-wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .back-btn{
+        position: relative;
+        left: 0;
     }
 
 

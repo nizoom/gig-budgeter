@@ -33,7 +33,9 @@ const Home: NextPage = () => {
           <div className="action-content-wrapper">
             <h3>A finance tracker for freelancers and contract workers. </h3>
             <h3 className="replacing-copy-2"></h3>
-            <button className="login-btns">Sign Up</button>
+            <Link href="/signup">
+              <button className="login-btns">Sign Up</button>
+            </Link>
             <Link href="/login">
               <button className="login-btns login">Login</button>
             </Link>
