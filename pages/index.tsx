@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Head from "next/head";
 import Phone from "../media/phone.png";
+import Link from "next/link";
 const Home: NextPage = () => {
   return (
     <div>
@@ -33,7 +34,9 @@ const Home: NextPage = () => {
             <h3>A finance tracker for freelancers and contract workers. </h3>
             <h3 className="replacing-copy-2"></h3>
             <button className="login-btns">Sign Up</button>
-            <button className="login-btns login">Login</button>
+            <Link href="/login">
+              <button className="login-btns login">Login</button>
+            </Link>
           </div>
         </section>
       </div>

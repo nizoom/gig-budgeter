@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.landingpage-pagewrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 100vh;
+}
+
+.hook-section {
+  position: relative;
+  height: 100%;
+  background-color: #1B4332;
+}
+.hook-section h1 {
+  color: #D8F3DC;
+  font-weight: 500;
+  font-size: 41.89px;
+}
+.hook-section h2 {
+  color: #D8F3DC;
+  font-weight: 400;
+  font-size: 41.89px;
+  letter-spacing: 1px;
+}
+
+.hook-content-wrapper {
+  margin-left: 92px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.hook-copy {
+  margin-bottom: 20px;
+}
+
+.action-section {
+  height: 100%;
+  background-color: #D8F3DC;
+}
+
+.action-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 220px;
+  margin: auto;
+  gap: 50px;
+}
+.action-content-wrapper h3 {
+  color: #081C15;
+  margin: 0 auto;
+  font-size: 25.89px;
+  font-weight: 400;
+}
+
+.login-btns {
+  height: 55px;
+  width: 200px;
+  background-color: #081C15;
+  color: #D8F3DC;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .landingpage-pagewrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .action-content-wrapper {
+    flex-direction: column-reverse;
+  }
+  .phone-img {
+    display: none;
+  }
+  .hook-section {
+    background-color: #D8F3DC;
+    width: 100%;
+  }
+  .hook-section h1, .hook-section h2 {
+    color: #081C15;
+  }
+  .hook-section .hook-content-wrapper {
+    margin: auto;
+    text-align: center;
+  }
+  .hook-copy h2 {
+    visibility: collapse;
+    display: none;
+  }
+  .action-content-wrapper h3:first-child {
+    visibility: collapse;
+  }
+  .replacing-copy-2::before {
+    content: "Let us do the math";
+  }
+  .replacing-copy-1::before {
+    color: #081C15;
+    margin: 0 auto;
+    font-size: 25.89px;
+    font-weight: 400;
+    content: "A finance tracker for freelancers and contract workers.";
+  }
+}
+
+/*# sourceMappingURL=landingpage.cs.map */
