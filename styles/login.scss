@@ -80,6 +80,7 @@
    
     position: absolute;
     left: 5%;
+    cursor: pointer;
     
 }
 
@@ -94,7 +95,11 @@
 }
 
 @media(max-width: 400px){
+    .login-page-wrapper{
+        background-color: #40916C;
+    }
     .login-box{
+        filter: none;
         width: 200px;
 
         form{

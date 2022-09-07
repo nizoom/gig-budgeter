@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import BackBtn from "../media/backbtn.png";
+import Link from "next/link";
 const SignUp: NextPage = () => {
   return (
     <div className="login-page-wrapper">
@@ -37,7 +38,9 @@ const SignUp: NextPage = () => {
                 Create
               </button>
               <div className="back-btn">
-                <Image src={BackBtn} />
+                <Link href="/">
+                  <Image src={BackBtn} />
+                </Link>
               </div>
             </div>
           </div>

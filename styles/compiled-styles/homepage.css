@@ -110,112 +110,90 @@
     content: "A finance tracker for freelancers and contract workers.";
   }
 }
-.login-page-wrapper {
-  background-color: #D8F3DC;
-  height: 100vh;
-  text-align: center;
-}
-.login-page-wrapper h1 {
-  font-size: 25.89px;
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 50px;
+.homepage-page-wrapper {
+  background-color: #1B4332;
+  height: 100%;
 }
 
-.login-box {
-  background-color: #40916C;
-  width: 600px;
-  padding: 50px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border-radius: 18px;
-  filter: drop-shadow(0 0 0.5rem rgb(2, 46, 15));
+.current-total {
+  margin: 0;
+  color: #D8F3DC;
+  font-weight: 400;
+  font-size: 25.89px;
+  float: right;
+  padding: 60px 80px;
 }
-.login-box form {
+
+.add-sub-btn-div {
+  display: flex;
+  padding: 40px 80px;
+  gap: 80px;
+  width: 550px;
+}
+
+.action-wrapper {
+  width: 250px;
+}
+
+.action-btn {
+  background-color: #40916C;
+  color: #D8F3DC;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  height: 70px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.action-dropdown {
+  background-color: #081C15;
+  color: #D8F3DC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+  border-radius: 32px;
+}
+
+.action-form-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  margin: auto;
-  gap: 60px;
+  gap: 10px;
 }
-
-.label-input-group {
-  display: flex;
-  flex-direction: column;
-}
-.label-input-group input {
-  width: 300px;
-  height: 30px;
-  border: none;
-  background-color: #D8F3DC;
-}
-.label-input-group label {
+.action-form-section label {
   font-size: 16px;
-  font-weight: 500;
-  align-self: flex-start;
-  margin-bottom: 5px;
 }
 
-.login-box p {
-  font-size: 25.89px;
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 50px;
+.action-input {
+  background-color: #D8F3DC;
+  border: none;
+  width: 200px;
+  height: 25px;
 }
 
-.signup-btns-wrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-
-.back-btn {
-  position: absolute;
-  left: 5%;
+.submit-action-btn {
+  background-color: #74C69D;
+  border: none;
+  border-radius: 32px;
   cursor: pointer;
+  width: 140px;
+  height: 30px;
+  font-size: 16px;
 }
 
-@media (max-width: 800px) {
-  .login-box {
-    width: 300px;
-  }
-  .login-box form {
-    width: 300px;
-  }
-}
-@media (max-width: 400px) {
-  .login-page-wrapper {
-    background-color: #40916C;
-  }
-  .login-box {
-    filter: none;
-    width: 200px;
-  }
-  .login-box form {
-    width: 200px;
-  }
-  .login-box input {
-    width: 200px;
-  }
-  .login-box p {
-    font-size: 16px;
-  }
-  .login-box header {
-    font-size: 16px;
-  }
-  .signup-btns-wrapper {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .back-btn {
-    position: relative;
-    left: 0;
-  }
+.forecast-div {
+  margin-left: 80px;
+  width: 550px;
 }
 
-/*# sourceMappingURL=login.css.map */
+.forecast-dropdown {
+  height: 400px;
+  background-color: #081C15;
+  border-radius: 32px;
+}
+
+/*# sourceMappingURL=homepage.css.map */
