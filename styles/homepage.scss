@@ -82,10 +82,24 @@
 .forecast-div{
     margin-left: 80px;
     width: 550px;
-}
-
-.forecast-dropdown{
-    height: 400px;
+    height: 350px;
     background-color: landingpage.$darkest;
     border-radius: 32px;
 }
+
+.forecast-dropdown{
+    margin: 30px;
+    color: landingpage.$light-background;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    label{
+        font-size: map-get(landingpage.$font-sizes, small );
+    }
+
+    p{
+        font-size: map-get(landingpage.$font-sizes, small );
+    }
+}
+

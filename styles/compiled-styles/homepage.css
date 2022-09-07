@@ -188,12 +188,24 @@
 .forecast-div {
   margin-left: 80px;
   width: 550px;
+  height: 350px;
+  background-color: #081C15;
+  border-radius: 32px;
 }
 
 .forecast-dropdown {
-  height: 400px;
-  background-color: #081C15;
-  border-radius: 32px;
+  margin: 30px;
+  color: #D8F3DC;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.forecast-dropdown label {
+  font-size: 16px;
+}
+.forecast-dropdown p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=homepage.css.map */
