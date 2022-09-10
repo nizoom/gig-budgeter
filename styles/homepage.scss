@@ -7,8 +7,6 @@
     border: none;
     border-radius: 32px;
     color: landingpage.$light-background;
-   
-   
     cursor: pointer;
 }
 
@@ -44,7 +42,6 @@
     border-radius: 32px;
     cursor: pointer;
     filter: drop-shadow(0 0 1rem rgb(2, 46, 15));
-
 }
 
 .action-dropdown{
@@ -64,7 +61,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-
     label{
         font-size: map-get(landingpage.$font-sizes, small );
     }
@@ -111,17 +107,22 @@
     }
 }
 
+.left-half{
+    background-color: landingpage.$dark-background;
+
+}
+
 .right-half{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-color: landingpage.$dark-background;
 }
 .current-total{
     margin: 0;
     color: landingpage.$light-background;
     font-weight: map-get(landingpage.$font-weights, regular);
     font-size: map-get(landingpage.$font-sizes, medium );
-  
     padding: 60px 80px;
 }
 
@@ -131,7 +132,6 @@
     height: 50px;
     width: 200px;
     background-color: #40916C;
-    
 }
 
 .monthly-btn{
@@ -149,6 +149,100 @@
     flex-direction: row-reverse;
     margin-right: 80px;
     filter: drop-shadow(0 0 0.5rem rgb(2, 46, 15));
-  
+}
+
+.chart-wrapper{
+    width: 80%;
+}
+
+.chart{
+    background-color: landingpage.$darkest;
+    height: 500px;
+    border-radius: 18px;
+    margin-right: 80px;
+    margin-top: 20px;  
+}
+
+@media(max-width: 1200px){
+    .homepage-page-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-half{
+        width: 100%;
+        
+    }
+    
+    .left-half{
+        width: 100%;
+    }
+    .add-sub-btn-div{
+        margin: auto;
+    }
+
+    .forecast-div{
+        margin: auto;
+    }
+
+    .chart{
+        margin: auto;
+        width: 550px;
+    }
+    .chart-wrapper{
+    
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    .current-total{
+     width: 75%;
+     margin: auto;
+     display: flex;
+     justify-content: flex-end;
+     padding-bottom: 40px;
    
+    }
+    .weekly-btn-wrapper{
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 710px){
+    .add-sub-btn-div{
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+    .action-wrapper{
+        width: auto;
+    }
+
+    .forecast-div{
+        width: 90%;
+    }
+
+    .chart{
+        width: auto;
+    }
+    .current-total{
+        width: auto;
+    }
+
+    .weekly-btn-wrapper{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}
+
+@media(max-width: 400px){
+    .action-wrapper{
+      
+        width: 300px;
+    }
+    .add-sub-btn-div{
+        align-items: center;
+    }
 }
