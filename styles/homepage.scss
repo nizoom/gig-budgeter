@@ -2,19 +2,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-.homepage-page-wrapper{
-    background-color: landingpage.$dark-background;
-    height: 100%;
+@mixin classic-btn{
+    background-color: #74C69D;
+    border: none;
+    border-radius: 32px;
+    color: landingpage.$light-background;
+   
+   
+    cursor: pointer;
 }
 
-.current-total{
-    margin: 0;
-    color: landingpage.$light-background;
-    font-weight: map-get(landingpage.$font-weights, regular);
-    font-size: map-get(landingpage.$font-sizes, medium );
-    float: right;
-    padding: 60px 80px;
+.homepage-page-wrapper{
+    position: absolute;
+    background-color: landingpage.$dark-background;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
+
+
 
 .add-sub-btn-div{
     display: flex;
@@ -36,6 +43,7 @@
     height: 70px;
     border-radius: 32px;
     cursor: pointer;
+    filter: drop-shadow(0 0 1rem rgb(2, 46, 15));
 
 }
 
@@ -103,3 +111,44 @@
     }
 }
 
+.right-half{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.current-total{
+    margin: 0;
+    color: landingpage.$light-background;
+    font-weight: map-get(landingpage.$font-weights, regular);
+    font-size: map-get(landingpage.$font-sizes, medium );
+  
+    padding: 60px 80px;
+}
+
+.filter-time-btn{
+    @include classic-btn;
+    font-size: map-get(landingpage.$font-sizes, small );
+    height: 50px;
+    width: 200px;
+    background-color: #40916C;
+    
+}
+
+.monthly-btn{
+    @include classic-btn;
+    font-size: map-get(landingpage.$font-sizes, small );
+    height: 50px;
+    width: 200px;
+    background-color: #081C15;
+    margin-right: -20px;
+    filter: drop-shadow(0 0 0.5rem rgb(2, 46, 15));
+}
+
+.weekly-btn-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 80px;
+    filter: drop-shadow(0 0 0.5rem rgb(2, 46, 15));
+  
+   
+}

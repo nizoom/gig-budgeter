@@ -111,17 +111,12 @@
   }
 }
 .homepage-page-wrapper {
+  position: absolute;
   background-color: #1B4332;
   height: 100%;
-}
-
-.current-total {
-  margin: 0;
-  color: #D8F3DC;
-  font-weight: 400;
-  font-size: 25.89px;
-  float: right;
-  padding: 60px 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .add-sub-btn-div {
@@ -144,6 +139,7 @@
   height: 70px;
   border-radius: 32px;
   cursor: pointer;
+  filter: drop-shadow(0 0 1rem rgb(2, 46, 15));
 }
 
 .action-dropdown {
@@ -206,6 +202,53 @@
 }
 .forecast-dropdown p {
   font-size: 16px;
+}
+
+.right-half {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.current-total {
+  margin: 0;
+  color: #D8F3DC;
+  font-weight: 400;
+  font-size: 25.89px;
+  padding: 60px 80px;
+}
+
+.filter-time-btn {
+  background-color: #74C69D;
+  border: none;
+  border-radius: 32px;
+  color: #D8F3DC;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  width: 200px;
+  background-color: #40916C;
+}
+
+.monthly-btn {
+  background-color: #74C69D;
+  border: none;
+  border-radius: 32px;
+  color: #D8F3DC;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  width: 200px;
+  background-color: #081C15;
+  margin-right: -20px;
+  filter: drop-shadow(0 0 0.5rem rgb(2, 46, 15));
+}
+
+.weekly-btn-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 80px;
+  filter: drop-shadow(0 0 0.5rem rgb(2, 46, 15));
 }
 
 /*# sourceMappingURL=homepage.css.map */
